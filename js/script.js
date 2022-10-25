@@ -24,10 +24,12 @@ let btnCheck =document.querySelector('.btn');
 
 btnCheck.addEventListener('click', function() {
     if (email.includes(mailUser.value)) {
-        console.log('mail corretta')
+        console.log('email confermata')
+        alert('email confermata')
     }
     else {
-        console.log('mail sbagliata')
+        console.log('email errata')
+        alert('email errata')
     }
 })
 
