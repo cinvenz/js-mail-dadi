@@ -41,14 +41,17 @@ btnDadi.addEventListener('click', function() {
     const numComputer = Math.floor(Math.random() * 6 ) +1;
     console.log('il numero del computer è: ' + numComputer)
 
+    const number = document.querySelector('.number')
+
     if (numUser > numComputer) {
+        number.innerHTML = ('NUMERO UTENTE: ' + numUser) + (' NUMERO COMPUTER: ' + numComputer)
         alert('Hai vinto')
     } else if (numUser < numComputer) {
+        number.innerHTML = ('NUMERO UTENTE: ' + numUser) + (' NUMERO COMPUTER: ' + numComputer)
         alert('Hai perso')
     }
     else {
+        number.innerHTML = ('NUMERO UTENTE: ' + numUser) + (' NUMERO COMPUTER: ' + numComputer)
         alert('Pareggio')
     }
-    
-
 });
